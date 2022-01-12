@@ -7,8 +7,8 @@ public class MyApp {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MessageServiceConfig.class);
 
-        MessageService messageService = applicationContext.getBean("messageService", MessageService.class);
-        MessageService messageService2 = applicationContext.getBean("messageService", MessageService.class);
+        MessageService messageService = applicationContext.getBean("messageService2", MessageService.class);
+        MessageService messageService2 = applicationContext.getBean("messageService2", MessageService.class);
 
         System.out.println(messageService.getMessage());
         System.out.println(messageService2.getMessage());
