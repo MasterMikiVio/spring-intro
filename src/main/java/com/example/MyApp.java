@@ -13,7 +13,7 @@ public class MyApp {
         System.out.println(messageService.getMessage());
         System.out.println(messageService2.getMessage());
 
-        System.out.println(messageService.hashCode()==messageService2.hashCode());
+        System.out.println(messageService.hashCode()==messageService2.hashCode()):
 
         applicationContext.close();
     }
