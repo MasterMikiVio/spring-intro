@@ -1,12 +1,11 @@
 package com.example;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MyApp {
 
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MessageServiceConfig.class);
 
         MessageService messageService = applicationContext.getBean("messageService", MessageService.class);
         MessageService messageService2 = applicationContext.getBean("messageService", MessageService.class);

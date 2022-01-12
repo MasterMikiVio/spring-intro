@@ -4,7 +4,6 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("messageService")
-@Scope("prototype")
 public class MyNameMessageService implements MessageService {
     public String message = "Mikołaj Wach";
 
