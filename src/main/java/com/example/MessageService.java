@@ -1,6 +1,11 @@
 package com.example;
 
-public interface MessageService {
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
+@Configuration
+public interface MessageService {
+    @Bean
     String getMessage();
 }
